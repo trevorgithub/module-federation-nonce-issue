@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Commented out CSP below works but is much too liberal -->
+  <!-- <meta http-equiv="Content-Security-Policy" content="script-src http://localhost:8081 'unsafe-eval' 'self'; style-src 'unsafe-inline' 'self'; default-src 'self';"> -->
+
+  <!-- The CSP below should work, and is desired, but the nonce is not respected by module federation -->
+  <meta http-equiv="Content-Security-Policy" content="script-src 'nonce-c29tZSBjb29sIHN0cmluZyB3aWxsIHBvcCB1cCAxMjM=' 'self'; style-src 'nonce-c29tZSBjb29sIHN0cmluZyB3aWxsIHBvcCB1cCAxMjM=' 'self'; default-src 'self';">
+  <title>host</title>
+</head>
+
+<body>
+  <div id="app"></div>
+</body>
+
+</html>
